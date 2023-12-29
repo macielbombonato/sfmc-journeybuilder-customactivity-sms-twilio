@@ -20,8 +20,8 @@ define([
     connection.on('requestedEndpoints', onGetEndpoints);
 
     connection.on('clickedNext', save);
-    //connection.on('clickedBack', onClickedBack);
-    //connection.on('gotoStep', onGotoStep);
+    connection.on('clickedBack', onClickedBack);
+    connection.on('gotoStep', onGotoStep);
 
     function onRender() {
         // JB will respond the first time 'ready' is called with 'initActivity'
@@ -67,7 +67,7 @@ define([
                 }
 
                 if (key === 'to') {
-                    $('#phoneNumber').val(val);
+                    $('#to').val(val);
                 }
 
             })
@@ -98,7 +98,7 @@ define([
         var authToken = $('#authToken').val();
         var messagingService = $('#messagingService').val();
         var body = $('#messageBody').val();
-        var phoneNumber = $('#phoneNumber').val();
+        var phoneNumber = $('#to').val();
 
         payload['arguments'].execute.inArguments = [{
             "accountSid": accountSid,
