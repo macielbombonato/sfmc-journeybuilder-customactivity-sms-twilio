@@ -66,7 +66,7 @@ define([
                     $('#messageBody').val(val);
                 }
 
-                if (key === 'phoneNumber') {
+                if (key === 'to') {
                     $('#phoneNumber').val(val);
                 }
 

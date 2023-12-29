@@ -93,7 +93,7 @@ exports.execute = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    //console.log("Executed: "+req.body.inArguments[0]);
+    console.log("Executed: "+req.body.inArguments[0]);
     
     var requestBody = req.body.inArguments[0];
 
@@ -154,7 +154,7 @@ exports.publish = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    //console.log("Published: "+req.body.inArguments[0]);        
+    console.log("Published: "+req.body.inArguments[0]);        
     
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
@@ -172,7 +172,7 @@ exports.validate = function (req, res) {
     console.log("3");	
     console.log("2");	
     console.log("1");	
-    //console.log("Validated: "+req.body.inArguments[0]);       
+    console.log("Validated: "+req.body.inArguments[0]);       
     
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
