@@ -65,6 +65,11 @@ define([
                 if (key === 'body') {
                     $('#messageBody').val(val);
                 }
+
+                if (key === 'to') {
+                    $('#phoneNumber').val(val);
+                }
+
             })
         });
 
