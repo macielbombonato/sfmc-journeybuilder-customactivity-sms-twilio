@@ -16,8 +16,7 @@
         "execute": {
             "inArguments": [
                 {
-                  "email": "{{Contact.Default.EmailAddress}}",
-                  "to": "{{Event.'DEAudience-30cd95b2-4cd8-c314-1db4-f4ea229c38ea'.'mobile'}}" 
+                  "email": "{{Contact.Default.EmailAddress}}"
                 }
             ],
             "outArguments": [],
