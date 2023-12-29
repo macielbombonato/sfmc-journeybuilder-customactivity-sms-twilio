@@ -9,6 +9,7 @@ var path        = require('path');
 var request     = require('request');
 var routes      = require('./routes');
 var activity    = require('./routes/activity');
+var logger = require('morgan');
 
 var app = express();
 
@@ -16,6 +17,8 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.json({type: 'application/json'})); 
 //app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(logger('dev'));
 
 //app.use(express.methodOverride());
 //app.use(express.favicon());
